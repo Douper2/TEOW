@@ -7,5 +7,6 @@ Just an Text Editor for Old Windows
 - [ ] Saving files
 - [ ] Saving files as something
 - [ ] Getting colors/other stuff from json or another file and putting that in the program
+- [ ] CTRL + F to search for specific text/piece of code
 - [x] Opening files
 - [x] App runs

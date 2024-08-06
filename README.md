@@ -2,6 +2,7 @@
 Just an Text Editor for Old Windows
 
 - [x] Opening files
+- [ ] Compiler/interpreter support for actual coding
 - [ ] Remaking the UI to look like a frutiger aero app (adding frutiger aero icons etc.)
 - [ ] Saving files
 - [ ] Saving files as something

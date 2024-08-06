@@ -2,10 +2,19 @@ import nigui, std/json, strutils
 
 app.init()
 
-# new window fuck yeah (i tried so much shit out just for it to work its unbeliveable)
-var window = newWindow("TEST APP")
+# new window fuck yeah
+var window = newWindow("TEOW")
 window.height = 480
 window.width = 640
+
+# try:
+  # var icon = newImage()                 # COMMENTING IT OUT UNTIL I FIGURE OUT WHAT THE FUCK IS WRONG
+  # if icon.loadFromFile("icon.png")
+  # window.icon = icon
+  # else:
+    # echo "Failed to set the icon"
+# except Exception as e:
+  # echo "Error setting the icon"
 
 var mainContainer = newLayoutContainer(Layout_Vertical)
 window.add(mainContainer)
@@ -19,9 +28,12 @@ mainContainer.add(buttonsContainer)
 var openButton = newButton("Open file")
 buttonsContainer.add(openButton)
 
+var saveasButton = newButton("Save as")
+buttonsContainer.add(saveasButton)
+
 openButton.onClick = proc(event: ClickEvent) =
   var dialog = newOpenFileDialog()
-  dialog.title = "Test Open"
+  dialog.title = "Opening files..."
   dialog.multiple = true
   # dialog.directory = ""
   dialog.run()
@@ -34,6 +46,19 @@ openButton.onClick = proc(event: ClickEvent) =
       textArea.text = filecontent
     except OSError as e:
       textArea.text = "Cannot open file, try again"
+
+saveasButton.onClick = proc(event: ClickEvent) =
+  var dialog = SaveFileDialog()
+  dialog.title = "Saving files as..."
+  dialog.defaultName = "defaultName.txt"
+  dialog.run()
+  if dialog.file != "":
+    try:
+      textArea.text = "File saved succsessfully"
+    except OSError as e:
+      textArea.text = "Error: Couldn't save file"
+  else:
+    textArea.text = "Task failed successfully"
 
 window.show()
 app.run()

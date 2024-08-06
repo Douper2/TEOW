@@ -21,18 +21,19 @@ buttonsContainer.add(openButton)
 
 openButton.onClick = proc(event: ClickEvent) =
   var dialog = newOpenFileDialog()
-  dialog.title = "I wanna die help"
+  dialog.title = "Test Open"
   dialog.multiple = true
-  if dialog.run() and (dialog.files.len > 0):
-    let selected_file = dialog.files[0]
-    var filecontent = ""
+  # dialog.directory = ""
+  dialog.run()
+  textArea.addLine($dialog.files.len & " files selected")
+  if dialog.files.len > 0:
+    let openedFile = dialog.files[0]
+    var filecontent: string = ""
     try:
-      filecontent = readFile(selected_file)
+      filecontent = readFile(openedFile)
       textArea.text = filecontent
     except OSError as e:
-      textArea.text = "Error reading file"
-  else:
-      textArea.text = "No file selected."
+      textArea.text = "Cannot open file, try again"
 
 window.show()
 app.run()

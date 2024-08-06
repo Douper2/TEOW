@@ -2,6 +2,7 @@
 Just an Text Editor for Old Windows
 
 - [ ] Compiler/interpreter support for actual coding
+- [ ] Adding support for non-english languages (e.g. Romanian, Serbian, Hungarian, German, Spanish, etc.)
 - [ ] Keyboard shortcuts
 - [ ] Remaking the UI to look like a frutiger aero app (adding frutiger aero icons etc.)
 - [ ] Saving files

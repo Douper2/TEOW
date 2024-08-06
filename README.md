@@ -2,6 +2,7 @@
 Just an Text Editor for Old Windows
 
 - [x] Opening files
+- [ ] Remaking the UI to look like a frutiger aero app
 - [ ] Saving files
 - [ ] Saving files as something
 - [ ] Getting colors/other stuff from json or another file and putting that in the program

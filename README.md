@@ -12,6 +12,6 @@ Just an Text Editor for Old Windows
 - [x] Opening files
 - [x] App runs
 
-#### Problems with the app
+### Problems with the app
 - Big files load slowly
 - You tell me

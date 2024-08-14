@@ -1,6 +1,13 @@
-import nigui, std/json, strutils
+import nigui, os, strutils
+from os import fileExists
+
 
 app.init()
+
+let file = "plugin.txt"
+var lines = newSeq[string]()
+if fileExists(file):
+  lines = readFile(file).splitLines()
 
 # new window fuck yeah
 var window = newWindow("TEOW")
@@ -8,7 +15,7 @@ window.height = 480
 window.width = 640
 
 # try:
-  # var icon = newImage()                 # COMMENTING IT OUT UNTIL I FIGURE OUT WHAT THE FUCK IS WRONG
+  # var icon = newImage()                   # COMMENTING IT OUT UNTIL I FIGURE OUT WHAT THE FUCK IS WRONG
   # if icon.loadFromFile("icon.png")
   # window.icon = icon
   # else:
@@ -25,15 +32,15 @@ mainContainer.add(textArea)
 var buttonsContainer = newLayoutContainer(Layout_Horizontal)
 mainContainer.add(buttonsContainer)
 
-var openButton = newButton("Open file")
+var openButton = newButton(lines[1])
 buttonsContainer.add(openButton)
 
-var saveasButton = newButton("Save as")
+var saveasButton = newButton(lines[0])
 buttonsContainer.add(saveasButton)
 
 openButton.onClick = proc(event: ClickEvent) =
   var dialog = newOpenFileDialog()
-  dialog.title = "Opening files..."
+  dialog.title = lines[2]
   dialog.multiple = true
   # dialog.directory = ""
   dialog.run()
@@ -45,18 +52,18 @@ openButton.onClick = proc(event: ClickEvent) =
       filecontent = readFile(openedFile)
       textArea.text = filecontent
     except OSError as e:
-      textArea.text = "Cannot open file, try again"
+      textArea.text = lines[3]
 
 saveasButton.onClick = proc(event: ClickEvent) =
   var dialog = SaveFileDialog()
-  dialog.title = "Saving files as..."
+  dialog.title = lines[4]
   dialog.defaultName = "defaultName.txt"
   dialog.run()
   if dialog.file != "":
     try:
-      textArea.text = "File saved succsessfully"
+      textArea.text = lines[5]
     except OSError as e:
-      textArea.text = "Error: Couldn't save file"
+      textArea.text = lines[6]
   else:
     textArea.text = "Task failed successfully"
 

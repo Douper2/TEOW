@@ -1,7 +1,7 @@
 Save as
-OPen file
+Open file
 Opening files...
 Cannot open file, try again.
 Saving files as...
 File saved successfully
-Error: Couldn't open file
+Error: Couldn't save file

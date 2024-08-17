@@ -1,5 +1,5 @@
 ## TEOW (I don't have ideas for a name pls give me a good one)
-Just an **T**ext **E**ditor for **O**ld **W**indows
+Just a **T**ext **E**ditor for **O**ld **W**indows
 
 - [ ] Compiler/interpreter support for actual coding
 - [ ] Keyboard shortcuts

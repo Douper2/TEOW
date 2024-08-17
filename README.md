@@ -17,4 +17,4 @@ Just a **T**ext **E**ditor for **O**ld **W**indows
 
 # Contributions
 
-If you want to contribute, [click here](./TEOW/contribute.md)
+If you want to contribute, check out **contribute.md**

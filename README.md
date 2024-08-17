@@ -14,3 +14,7 @@ Just a **T**ext **E**ditor for **O**ld **W**indows
 - Big files load slowly
 - You tell me
 - Saving doesn't work (I have no clue why)
+
+# Contributions
+
+If you want to contribute, [click here](./TEOW/contribute.md)

@@ -1,0 +1,7 @@
+Salvează
+Deschide fișier
+Se deschid fișiere...
+Nu s-a putut deschide fișierul, încearcă din nou.
+Se salvează fișierul...
+Fișier salvat cu secces
+Eroare: Nu s-a putut salva fișierul

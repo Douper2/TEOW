@@ -1,0 +1,7 @@
+Speichern als
+Öffne Datei
+Öffnet Dateien...
+Kann Datei nich Öffnen, versuche es nochmal.
+Speichere Dateien als...
+Datei erfolgreich gespeichert
+Fehler: Datei konnte nicht gespeichert werden

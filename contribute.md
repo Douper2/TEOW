@@ -10,3 +10,7 @@ Mai întâi, downloadează fișierul `plugin.txt` din repo **->** tradu conținu
 
 ## Cum poți contribui programând
 Poți ori să rezolvi bug-uri, de exemplu: salvarea fișierelor nu merge, sau să adaugi noi funcționalități aplicației.
+
+# German
+## wie du mit übersetzen beitragen kannst
+Als erstes lade die `plugin.txt` datei von der repository runter **->** übersetze diese datei  **->** mache eine fork von der repositorzz **->** lade die übersetzte datei mit Sprach code im namen z.b. plugin_**de**.txt, in den übersetzungs ordner der repository, du kannst aber auch diese datei übersetzen.

@@ -1,8 +1,11 @@
 import nigui, os, strutils
 from os import fileExists
 
-
 app.init()
+
+var
+  textcontent = ""
+  searchterm = ""
 
 let file = "plugin.txt"
 var lines = newSeq[string]()
@@ -13,15 +16,7 @@ if fileExists(file):
 var window = newWindow("TEOW")
 window.height = 480
 window.width = 640
-
-# try:
-  # var icon = newImage()                   # COMMENTING IT OUT UNTIL I FIGURE OUT WHAT THE FUCK IS WRONG
-  # if icon.loadFromFile("icon.png")
-  # window.icon = icon
-  # else:
-    # echo "Failed to set the icon"
-# except Exception as e:
-  # echo "Error setting the icon"
+window.iconPath = "icon.png"
 
 var mainContainer = newLayoutContainer(Layout_Vertical)
 window.add(mainContainer)
@@ -32,15 +27,21 @@ mainContainer.add(textArea)
 var buttonsContainer = newLayoutContainer(Layout_Horizontal)
 mainContainer.add(buttonsContainer)
 
-var openButton = newButton(lines[1])
+var openButton = newButton(lines[1]) # Open file
 buttonsContainer.add(openButton)
 
-var saveasButton = newButton(lines[0])
+var saveasButton = newButton(lines[0]) # Save as
 buttonsContainer.add(saveasButton)
+
+var helpbutton = newButton("Placeholder")
+buttonsContainer.add(helpbutton)
+
+var findButton = newButton(lines[13]) # Find
+buttonsContainer.add(findButton)
 
 openButton.onClick = proc(event: ClickEvent) =
   var dialog = newOpenFileDialog()
-  dialog.title = lines[2]
+  dialog.title = lines[2] # Opening files...
   dialog.multiple = true
   # dialog.directory = ""
   dialog.run()
@@ -52,18 +53,18 @@ openButton.onClick = proc(event: ClickEvent) =
       filecontent = readFile(openedFile)
       textArea.text = filecontent
     except OSError as e:
-      textArea.text = lines[3]
+      textArea.text = lines[3]  # Cannot open file, try again
 
 saveasButton.onClick = proc(event: ClickEvent) =
   var dialog = SaveFileDialog()
-  dialog.title = lines[4]
+  dialog.title = lines[4] # Saving files...
   dialog.defaultName = "defaultName.txt"
   dialog.run()
   if dialog.file != "":
     try:
-      textArea.text = lines[5]
+      textArea.text = lines[5] # File saved successfully
     except OSError as e:
-      textArea.text = lines[6]
+      textArea.text = lines[6] # Error: Couldn't save file
   else:
     textArea.text = "Task failed successfully"
 

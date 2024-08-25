@@ -1,7 +1,17 @@
 Salvează
 Deschide fișier
-Se deschid fișiere...
+Se deschid fișierele...
 Nu s-a putut deschide fișierul, încearcă din nou.
 Se salvează fișierul...
-Fișier salvat cu secces
+Fișier salvat cu succes
 Eroare: Nu s-a putut salva fișierul
+Găsește text
+Se găsește text...
+Scrie un cuvânt sau cuvinte
+Cuvântul a fost găsit!
+Cuvântul nu a fost găsit!
+Fereastra de găsire de text
+Găsește
+140
+168
+147

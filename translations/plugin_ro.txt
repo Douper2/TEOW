@@ -12,6 +12,3 @@ Cuvântul a fost găsit!
 Cuvântul nu a fost găsit!
 Fereastra de găsire de text
 Găsește
-140
-168
-147

@@ -58,10 +58,11 @@ openButton.onClick = proc(event: ClickEvent) =
 saveasButton.onClick = proc(event: ClickEvent) =
   var dialog = SaveFileDialog()
   dialog.title = lines[4] # Saving files...
-  dialog.defaultName = "defaultName.txt"
+  dialog.defaultName = "file.txt"
   dialog.run()
   if dialog.file != "":
     try:
+      writeFile(dialog.file, textArea.text)
       textArea.text = lines[5] # File saved successfully
     except OSError as e:
       textArea.text = lines[6] # Error: Couldn't save file

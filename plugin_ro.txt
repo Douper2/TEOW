@@ -1,0 +1,20 @@
+Salvează
+Deschide fișier
+Se deschid fișierele...
+Nu s-a putut deschide fișierul, încearcă din nou.
+Se salvează fișierul...
+Fișier salvat cu succes
+Eroare: Nu s-a putut salva fișierul
+Găsește text
+Se găsește text...
+Scrie un cuvânt sau cuvinte
+Cuvântul a fost găsit!
+Cuvântul nu a fost găsit!
+Fereastra de găsire de text
+Găsește
+Ajutor
+Fereastra pt. ajutor
+Despre aplicație
+Cum poți contribui
+Bun venit la partea de ajutor al aplicației! Aici, o să răspund la niște întrebări frecvente. Cum pot contribui? Poți contribui făcând un fork al repo-ului și făcând modificări aplicației. Cum pot să traduc fișierul plugin.txt? Sunt intrtucțiuni pe repo-ul de pe Github, în fișierul contribute.md, despre cum poți contribui.
+Nu s-a putut găsi fișierul „plugin.txt”

@@ -33,11 +33,24 @@ buttonsContainer.add(openButton)
 var saveasButton = newButton(lines[0]) # Save as
 buttonsContainer.add(saveasButton)
 
-var helpbutton = newButton("Placeholder")
+var helpbutton = newButton(lines[14]) # Help
 buttonsContainer.add(helpbutton)
 
 var findButton = newButton(lines[13]) # Find
 buttonsContainer.add(findButton)
+
+proc helpbuttonaction() =
+  textArea.text = "" # clears the textarea to display the help buttons content
+  echo "the button has been clicked"
+  try:
+    if lines.len > 21:
+      textArea.text = lines[20] # Intro and 1st FAQ question
+      echo "arata faq-u ba"
+    else:
+      echo "Help wtf is wrong with this, it either shows the text, or it just freezes\nBut hey atleast it works"
+  except IndexError as e:
+    textArea.text = lines[21] # Could not find "plugin.txt" file
+    echo "the index error is" & e.msg
 
 openButton.onClick = proc(event: ClickEvent) =
   var dialog = newOpenFileDialog()
@@ -68,6 +81,9 @@ saveasButton.onClick = proc(event: ClickEvent) =
       textArea.text = lines[6] # Error: Couldn't save file
   else:
     textArea.text = "Task failed successfully"
+
+helpbutton.onClick = proc(event: ClickEvent) =
+  helpbuttonaction()
 
 window.show()
 app.run()

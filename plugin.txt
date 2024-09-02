@@ -12,3 +12,9 @@ The word has been found!
 The word hasn't been found!
 Find text window
 Find
+Help
+Help window
+About
+How to contribute
+Welcome to the Help section of the app! Here, I'll be responding to some FAQ. How can I contribute? You can by forking the repo and making changes. How can I translate the plugin.txt file? There are instructions on the Github repo, in the contribute.md, on how to contribute.
+Could not find 'plugin.txt' file!

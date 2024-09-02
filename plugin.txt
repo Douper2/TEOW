@@ -12,6 +12,3 @@ The word has been found!
 The word hasn't been found!
 Find text window
 Find
-140
-168
-147

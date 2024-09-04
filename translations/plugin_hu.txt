@@ -1,0 +1,19 @@
+Mentés másként
+Fájl megnyitása...
+A fájl nem nyitható meg, próbàlja meg ùjra.
+Fájlok mentése másként...
+Fájl elmentve sikeresen
+Hiba: Nem sikerült menteni a fájlt
+Szöveg keresése
+Szöveg keresése...
+Írjon egy szót vagy szavakat
+A szó megtalálva!
+A szó nem található!
+Keresö szöveges ablak
+Keresö
+Segitö
+Segitö ablak
+Névjegy
+Hogyan járulhat hozzá
+Üdvözöljük az alkalmazás Súgó részében! Itt válaszolok néhány GYIK-re. Hogyan tudok hozzájárulni? Megteheti a repo forkolásával és módosításával. Hogyan fordíthatom le a plugin.txt fájlt? A hozzájárulásra vonatkozó utasítások a Github-repóról találhatók a hozzájárulás.md fájlban.
+Nem található a 'plugin.txt' fájl!

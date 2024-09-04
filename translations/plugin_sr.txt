@@ -1,0 +1,20 @@
+Sačuvaj kao...
+Otvori fajl
+Otvaram fajl...
+Fajl ne može biti otvoren, probajte ponovo.
+Sačuvaj fajlove kao...
+Fajl uspešno sačuvan
+Greška: Fajl nije mogao biti sačuvan
+Nađi tekst
+Tražim tekst...
+Napiši reč ili reči
+Reč je nađena!
+Reč nije nađena!
+Nađi tekst
+Nađi
+Pomoć
+Pomoć
+O programu
+Kako pomoći programu
+Dobro došli u sekciju pomoć! Ovde, lično ću odgovarati na neka često postavljana pitanja. Kako mogu pomoći programu? Možete fork-ovati repo i menjati/dodavati šta hoćete. Kako mogu prevesti plugin.txt fajl? Instrukcije su na Github repo-u, u contribute.md, na kako pomoći.
+Nisam našao 'plugin.txt' fajl!

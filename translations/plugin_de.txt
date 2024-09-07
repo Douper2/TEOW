@@ -5,3 +5,16 @@ Kann Datei nich Öffnen, versuche es nochmal.
 Speichere Dateien als...
 Datei erfolgreich gespeichert
 Fehler: Datei konnte nicht gespeichert werden
+Finde text
+Findet text...
+Schreibe ein wort oter mehrere wörter
+Das Wort wurde gefunden!
+Das Wort wurde nicht gefunden!
+Finde das text fenster
+Finde
+Hilfe
+hilfe fenster
+über
+Wie man helfen Kann
+Willkommen im Hilfebereich der App! Hier beantworte ich einige häufig gestellte Fragen. Wie kann ich mitwirken? Du kannst mitwirken, indem du das Repository forkt und Änderungen vornimmst. Wie kann ich die Datei plugin.txt übersetzen? Es gibt Anweisungen im Github-Repository, in der Datei contribute.md, wie du zur Übersetzung beitragen kannst.
+konnte die "plugin.txt" datei nicht finden. 
